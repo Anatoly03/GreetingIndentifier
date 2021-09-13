@@ -1,0 +1,13 @@
+# Secure Files
+.env
+
+# Large
+node_modules
+
+# Configurations
+.vscode
+.prettierrc.json
+
+# Other
+dump.rdb
+.DS_Store
