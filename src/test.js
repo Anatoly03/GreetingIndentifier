@@ -1,18 +1,18 @@
 export default [
     {
-        "text": "where can I buy your dress?",
-        "intent": "buy"
+        "text": "hi guys",
+        "intent": "greet"
     },
     {
-        "text": "how much was that dress?",
-        "intent": "buy"
+        "text": "goodbye",
+        "intent": ""
     },
     {
-        "text": "You look so beautiful in that dress",
-        "intent": "none"
+        "text": "Stone is made out of stone",
+        "intent": ""
     },
     {
-        "text": "I love you, you are gorgeous",
-        "intent": "none"
+        "text": "yooooo no way it's you",
+        "intent": "greet"
     }
 ]

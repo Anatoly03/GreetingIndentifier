@@ -7,8 +7,8 @@ import comment_testing from './test.js'
 
 const outputData = tf.tensor2d(
     comments.map((comment) => [
-        comment.intent === 'buy' ? 1 : 0,
-        comment.intent === 'none' ? 1 : 0,
+        comment.intent == 'greet' ? 1 : 0,
+        comment.intent == '' ? 1 : 0,
     ])
 )
 
@@ -69,7 +69,7 @@ function run() {
                 .then((history) => {
                     model.predict(testing_data).print()
 
-                    model.save('file://./src/model')
+                    //model.save('file://./src/model')
                     //console.log(JSON.stringify(model))
                 })
         })

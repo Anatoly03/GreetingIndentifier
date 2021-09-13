@@ -1,78 +1,66 @@
 export default [
     {
-        "text": "buy",
-        "intent": "buy"
+        "text": "hi",
+        "intent": "greet"
     },
     {
-        "text": "buying",
-        "intent": "buy"
+        "text": "hello",
+        "intent": "greet"
     },
     {
-        "text": "purchase",
-        "intent": "buy"
+        "text": "hi, how are you",
+        "intent": "greet"
     },
     {
-        "text": "buy that",
-        "intent": "buy"
+        "text": "welcome",
+        "intent": "greet"
     },
     {
-        "text": "buy this",
-        "intent": "buy"
+        "text": "moin",
+        "intent": "greet"
     },
     {
-        "text": "buy it",
-        "intent": "buy"
+        "text": "sup",
+        "intent": "greet"
     },
     {
-        "text": "where to buy",
-        "intent": "buy"
+        "text": "what's up guys, how are you",
+        "intent": "greet"
     },
     {
-        "text": "where can I buy that",
-        "intent": "buy"
+        "text": "yooooo",
+        "intent": "greet"
     },
     {
-        "text": "how much",
-        "intent": "buy"
+        "text": "yo",
+        "intent": "greet"
     },
     {
-        "text": "Woah yess❤️❤️",
-        "intent": "none"
+        "text": "hi john",
+        "intent": "greet"
     },
     {
-        "text": "Happy birthday to the most beautiful woman on Instagram ! 💗💗",
-        "intent": "none"
+        "text": "i need calcium",
+        "intent": ""
     },
     {
-        "text": "Your body 😍",
-        "intent": "none"
+        "text": "math is soo fun",
+        "intent": ""
     },
     {
-        "text": "Angel",
-        "intent": "none"
+        "text": "the politics are boring",
+        "intent": ""
     },
     {
-        "text": "I saw this swimsuit on a website and wasn’t convinced, but you rock it and now I want to buy it",
-        "intent": "buy"
+        "text": "sorry i got to go",
+        "intent": ""
     },
     {
-        "text": "So cute..sexy, sexy",
-        "intent": "none"
+        "text": "nevermind, figured it out",
+        "intent": ""
     },
     {
-        "text": "Ooo i need to look like u girl!! Gonna hit the gym now",
-        "intent": "none"
+        "text": "bye bye",
+        "intent": ""
     },
-    {
-        "text": "Beautiful👍💜",
-        "intent": "none"
-    },
-    {
-        "text": "😱😱💖💖",
-        "intent": "none"
-    },
-    {
-        "text": "What is your workout routine? It would be lovely if you could share 😍😍😍",
-        "intent": "none"
-    }
 ]
