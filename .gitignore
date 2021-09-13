@@ -4,6 +4,9 @@
 # Large
 node_modules
 
+# AI
+model
+
 # Configurations
 .vscode
 .prettierrc.json

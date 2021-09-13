@@ -68,10 +68,12 @@ function run() {
                 .fit(training_data, outputData, { epochs: 200 })
                 .then((history) => {
                     model.predict(testing_data).print()
+
+                    model.save('file://./src/model')
+                    //console.log(JSON.stringify(model))
                 })
         })
         .catch((err) => console.log('Prom Err:', err))
 }
 
-// Call function
 run()
