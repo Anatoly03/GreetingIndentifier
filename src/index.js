@@ -12,18 +12,12 @@ const outputData = tf.tensor2d(
     ])
 )
 
-const encodeData = (data) => {
+const encodeData = async (data) => {
     const sentences = data.map((comment) => comment.text.toLowerCase())
-    const trainingData = use 
-        .load()
-        .then((model) => {
-            return model.embed(sentences).then((embeddings) => {
-                return embeddings
-            })
-        })
-        .catch((err) => console.error('Fit Error:', err))
-
-    return trainingData
+    const m = await use.load()
+    return m.embed(sentences).then((embeddings) => {
+        return embeddings
+    })
 }
 
 const model = tf.sequential()
@@ -59,21 +53,14 @@ model.compile({
     optimizer: tf.train.adam(0.06), // This is a standard compile config
 })
 
-function run() {
-    Promise.all([encodeData(comments), encodeData(comment_testing)])
-        .then((data) => {
-            const { 0: training_data, 1: testing_data } = data
-
-            model
-                .fit(training_data, outputData, { epochs: 200 })
-                .then((history) => {
-                    model.predict(testing_data).print()
-
-                    //model.save('file://./src/model')
-                    //console.log(JSON.stringify(model))
-                })
-        })
-        .catch((err) => console.log('Prom Err:', err))
+async function run() {
+    const [training_data, testing_data] = await Promise.all([
+        encodeData(comments),
+        encodeData(comment_testing),
+    ])
+    let history = await model.fit(training_data, outputData, { epochs: 200 })
+    console.log(model.predict(testing_data))
+    model.predict(testing_data).print()
 }
 
 run()
