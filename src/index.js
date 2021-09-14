@@ -14,7 +14,7 @@ const outputData = tf.tensor2d(
 
 const encodeData = (data) => {
     const sentences = data.map((comment) => comment.text.toLowerCase())
-    const trainingData = use
+    const trainingData = use 
         .load()
         .then((model) => {
             return model.embed(sentences).then((embeddings) => {

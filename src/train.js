@@ -63,4 +63,16 @@ export default [
         "text": "bye bye",
         "intent": ""
     },
+    {
+        "text": "bye",
+        "intent": ""
+    },
+    {
+        "text": "cya",
+        "intent": ""
+    },
+    {
+        "text": "how is the weather today?",
+        "intent": ""
+    },
 ]

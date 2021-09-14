@@ -14,5 +14,13 @@ export default [
     {
         "text": "yooooo no way it's you",
         "intent": "greet"
+    },
+    {
+        "text": "how was the day today",
+        "intent": ""
+    },
+    {
+        "text": "what is up guys it's sykkuno here",
+        "intent": "greet"
     }
 ]
